@@ -1,0 +1,154 @@
+.figures {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: calc(0.25 * var(--cell-size));
+  bottom: calc(0.25 * var(--cell-size));
+  transition: all 1s ease;
+  .figure {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    background-size: 100%;
+    transition: all 1s ease;
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+
+  .RookSideWhite {
+    background-image: url("/Images/figure/RookSideWhite.svg");
+  }
+  .RookSideBlack {
+    background-image: url("/Images/figure/RookSideBlack.svg");
+  }
+  .BishopSideBlack {
+    background-image: url("/Images/figure/BishopSideBlack.svg");
+  }
+  .BishopSideWhite {
+    background-image: url("/Images/figure/BishopSideWhite.svg");
+  }
+  .KingSideWhite {
+    background-image: url("/Images/figure/KingSideWhite.svg");
+  }
+  .KingSideBlack {
+    background-image: url("/Images/figure/KingSideBlack.svg");
+  }
+  .KnightSideWhite {
+    background-image: url("/Images/figure/KnightSideWhite.svg");
+  }
+  .KnightSideBlack {
+    background-image: url("/Images/figure/KnightSideBlack.svg");
+  }
+  .PawnSideWhite {
+    background-image: url("/Images/figure/PawnSideWhite.svg");
+  }
+  .PawnSideBlack {
+    background-image: url("/Images/figure/PawnSideBlack.svg");
+  }
+  .QueenSideWhite {
+    background-image: url("/Images/figure/QueenSideWhite.svg");
+  }
+  .QueenSideBlack {
+    background-image: url("/Images/figure/QueenSideBlack.svg");
+  }
+  //white
+  .f-00 {
+    transform: translate(0%, 0%);
+  }
+  .f-07 {
+    transform: translate(700%, 0%);
+  }
+  .f-06 {
+    transform: translate(100%, 0%);
+  }
+  .f-05 {
+    transform: translate(200%, 0%);
+  }
+  .f-04 {
+    transform: translate(400%, 0%);
+  }
+  .f-03 {
+    transform: translate(300%, 0%);
+  }
+  .f-02 {
+    transform: translate(500%, 0%);
+  }
+  .f-01 {
+    transform: translate(600%, 0%);
+  }
+  //white pawns
+  .f-10 {
+    transform: translate(0%, 100%);
+  }
+  .f-11 {
+    transform: translate(600%, 100%);
+  }
+  .f-17 {
+    transform: translate(700%, 100%);
+  }
+  .f-16 {
+    transform: translate(100%, 100%);
+  }
+  .f-15 {
+    transform: translate(200%, 100%);
+  }
+  .f-14 {
+    transform: translate(400%, 100%);
+  }
+  .f-13 {
+    transform: translate(300%, 100%);
+  }
+  .f-12 {
+    transform: translate(500%, 100%);
+  }
+  //black
+  .f-70 {
+    transform: translate(700%, 700%);
+  }
+  .f-77 {
+    transform: translate(0%, 700%);
+  }
+  .f-76 {
+    transform: translate(100%, 700%);
+  }
+  .f-75 {
+    transform: translate(200%, 700%);
+  }
+  .f-74 {
+    transform: translate(400%, 700%);
+  }
+  .f-73 {
+    transform: translate(300%, 700%);
+  }
+  .f-72 {
+    transform: translate(500%, 700%);
+  }
+  .f-71 {
+    transform: translate(600%, 700%);
+  }
+  //black pawns
+  .f-60 {
+    transform: translate(0%, 600%);
+  }
+  .f-61 {
+    transform: translate(600%, 600%);
+  }
+  .f-67 {
+    transform: translate(700%, 600%);
+  }
+  .f-66 {
+    transform: translate(100%, 600%);
+  }
+  .f-65 {
+    transform: translate(200%, 600%);
+  }
+  .f-64 {
+    transform: translate(400%, 600%);
+  }
+  .f-63 {
+    transform: translate(300%, 600%);
+  }
+  .f-62 {
+    transform: translate(500%, 600%);
+  }
+}

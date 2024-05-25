@@ -2,10 +2,13 @@
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto 1fr;
+  position: relative;
+  transition: all 1s ease;
+
   &__rows-name {
     font-size: 16px;
     color: var(--cell-dark);
-    padding: 10px;
+    width: 23px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,9 +16,10 @@
     order: 1;
   }
   &__columns-name {
+    transition: all 1s ease;
     font-size: 16px;
     color: var(--cell-dark);
-    padding: 10px;
+    height: 23px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,12 +27,12 @@
     order: 2;
   }
   &__cells {
+    outline: 4px solid;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
     width: calc(8 * var(--cell-size));
     height: calc(8 * var(--cell-size));
-    border: 5px solid black;
 
     &-dark {
       background-color: var(--cell-dark);

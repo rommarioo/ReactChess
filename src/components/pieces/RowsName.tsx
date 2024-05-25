@@ -4,7 +4,7 @@ const RowsName: React.FC<{ rows: number[] }> = ({ rows }) => {
   return (
     <div className="board__rows-name">
       {rows.map((row) => (
-        <div key={row}>{row}</div>
+        <span key={row}>{row}</span>
       ))}
     </div>
   );

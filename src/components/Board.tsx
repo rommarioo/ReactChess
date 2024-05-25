@@ -1,6 +1,7 @@
 import React from "react";
 import RowsName from "./pieces/RowsName";
 import ColumnsName from "./pieces/ColumnsName";
+import Figure from "./figure/Figures";
 
 const Board: React.FC = () => {
   const rows = [8, 7, 6, 5, 4, 3, 2, 1];
@@ -17,14 +18,11 @@ const Board: React.FC = () => {
       <div className="board__cells">
         {rows.map((row, i) =>
           columns.map((column, j) => (
-            <div key={`${row}-${column}`} className={getClassName(i, j)}>
-              {row}
-              {"-"}
-              {column}
-            </div>
+            <div key={`${row}-${column}`} className={getClassName(i, j)}></div>
           ))
         )}
       </div>
+      <Figure />
       <ColumnsName columns={columns} />
     </div>
   );
