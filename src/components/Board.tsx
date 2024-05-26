@@ -1,7 +1,7 @@
 import React from "react";
 import RowsName from "./pieces/RowsName";
 import ColumnsName from "./pieces/ColumnsName";
-import Figure from "./figure/Figures";
+import Figures from "./figure/Figures";
 
 const Board: React.FC = () => {
   const rows = [8, 7, 6, 5, 4, 3, 2, 1];
@@ -22,7 +22,7 @@ const Board: React.FC = () => {
           ))
         )}
       </div>
-      <Figure />
+      <Figures />
       <ColumnsName columns={columns} />
     </div>
   );

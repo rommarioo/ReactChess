@@ -51,104 +51,204 @@
   .QueenSideBlack {
     background-image: url("/Images/figure/QueenSideBlack.svg");
   }
-  //white
-  .f-00 {
+  //black
+  .p-07 {
     transform: translate(0%, 0%);
   }
-  .f-07 {
-    transform: translate(700%, 0%);
-  }
-  .f-06 {
+  .p-17 {
     transform: translate(100%, 0%);
   }
-  .f-05 {
+  .p-27 {
     transform: translate(200%, 0%);
   }
-  .f-04 {
-    transform: translate(400%, 0%);
-  }
-  .f-03 {
+  .p-37 {
     transform: translate(300%, 0%);
   }
-  .f-02 {
+  .p-47 {
+    transform: translate(400%, 0%);
+  }
+  .p-57 {
     transform: translate(500%, 0%);
   }
-  .f-01 {
+  .p-67 {
     transform: translate(600%, 0%);
   }
-  //white pawns
-  .f-10 {
+  .p-77 {
+    transform: translate(700%, 0%);
+  }
+
+  .p-06 {
     transform: translate(0%, 100%);
   }
-  .f-11 {
-    transform: translate(600%, 100%);
-  }
-  .f-17 {
-    transform: translate(700%, 100%);
-  }
-  .f-16 {
+  .p-16 {
     transform: translate(100%, 100%);
   }
-  .f-15 {
+  .p-26 {
     transform: translate(200%, 100%);
   }
-  .f-14 {
-    transform: translate(400%, 100%);
-  }
-  .f-13 {
+  .p-36 {
     transform: translate(300%, 100%);
   }
-  .f-12 {
+  .p-46 {
+    transform: translate(400%, 100%);
+  }
+  .p-56 {
     transform: translate(500%, 100%);
   }
-  //black
-  .f-70 {
-    transform: translate(700%, 700%);
+  .p-66 {
+    transform: translate(600%, 100%);
   }
-  .f-77 {
-    transform: translate(0%, 700%);
+  .p-76 {
+    transform: translate(700%, 100%);
   }
-  .f-76 {
-    transform: translate(100%, 700%);
+
+  .p-05 {
+    transform: translate(0%, 200%);
   }
-  .f-75 {
-    transform: translate(200%, 700%);
+  .p-15 {
+    transform: translate(100%, 200%);
   }
-  .f-74 {
-    transform: translate(400%, 700%);
+  .p-25 {
+    transform: translate(200%, 200%);
   }
-  .f-73 {
-    transform: translate(300%, 700%);
+  .p-35 {
+    transform: translate(300%, 200%);
   }
-  .f-72 {
-    transform: translate(500%, 700%);
+  .p-45 {
+    transform: translate(400%, 200%);
   }
-  .f-71 {
-    transform: translate(600%, 700%);
+  .p-55 {
+    transform: translate(500%, 200%);
   }
-  //black pawns
-  .f-60 {
+  .p-65 {
+    transform: translate(600%, 200%);
+  }
+  .p-75 {
+    transform: translate(700%, 200%);
+  }
+
+  .p-04 {
+    transform: translate(0%, 300%);
+  }
+  .p-14 {
+    transform: translate(100%, 300%);
+  }
+  .p-24 {
+    transform: translate(200%, 300%);
+  }
+  .p-34 {
+    transform: translate(300%, 300%);
+  }
+  .p-44 {
+    transform: translate(400%, 300%);
+  }
+  .p-54 {
+    transform: translate(500%, 300%);
+  }
+  .p-64 {
+    transform: translate(600%, 300%);
+  }
+  .p-74 {
+    transform: translate(700%, 300%);
+  }
+
+  .p-03 {
+    transform: translate(0%, 400%);
+  }
+  .p-13 {
+    transform: translate(100%, 400%);
+  }
+  .p-23 {
+    transform: translate(200%, 400%);
+  }
+  .p-33 {
+    transform: translate(300%, 400%);
+  }
+  .p-43 {
+    transform: translate(400%, 400%);
+  }
+  .p-53 {
+    transform: translate(500%, 400%);
+  }
+  .p-63 {
+    transform: translate(600%, 400%);
+  }
+  .p-73 {
+    transform: translate(700%, 400%);
+  }
+
+  .p-02 {
+    transform: translate(0%, 500%);
+  }
+  .p-12 {
+    transform: translate(100%, 500%);
+  }
+  .p-22 {
+    transform: translate(200%, 500%);
+  }
+  .p-32 {
+    transform: translate(300%, 500%);
+  }
+  .p-42 {
+    transform: translate(400%, 500%);
+  }
+  .p-52 {
+    transform: translate(500%, 500%);
+  }
+  .p-62 {
+    transform: translate(600%, 500%);
+  }
+  .p-72 {
+    transform: translate(700%, 500%);
+  }
+
+  .p-01 {
     transform: translate(0%, 600%);
   }
-  .f-61 {
-    transform: translate(600%, 600%);
-  }
-  .f-67 {
-    transform: translate(700%, 600%);
-  }
-  .f-66 {
+  .p-11 {
     transform: translate(100%, 600%);
   }
-  .f-65 {
+  .p-21 {
     transform: translate(200%, 600%);
   }
-  .f-64 {
-    transform: translate(400%, 600%);
-  }
-  .f-63 {
+  .p-31 {
     transform: translate(300%, 600%);
   }
-  .f-62 {
+  .p-41 {
+    transform: translate(400%, 600%);
+  }
+  .p-51 {
     transform: translate(500%, 600%);
+  }
+  .p-61 {
+    transform: translate(600%, 600%);
+  }
+  .p-71 {
+    transform: translate(700%, 600%);
+  }
+
+  .p-00 {
+    transform: translate(0%, 700%);
+  }
+  .p-10 {
+    transform: translate(100%, 700%);
+  }
+  .p-20 {
+    transform: translate(200%, 700%);
+  }
+  .p-30 {
+    transform: translate(300%, 700%);
+  }
+  .p-40 {
+    transform: translate(400%, 700%);
+  }
+  .p-50 {
+    transform: translate(500%, 700%);
+  }
+  .p-60 {
+    transform: translate(600%, 700%);
+  }
+  .p-70 {
+    transform: translate(700%, 700%);
   }
 }
