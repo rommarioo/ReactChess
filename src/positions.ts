@@ -1,3 +1,5 @@
+import { State } from "./reducer/reducer";
+
 const createPosition = () => {
   const position: string[][] = new Array(8)
     .fill("")
@@ -55,5 +57,8 @@ export const copyPos = (position: string[][]) => {
 
   return newPosition;
 };
-
+export const initPosition: State = {
+  position: [createPosition()],
+  turn: "white",
+};
 export default createPosition;

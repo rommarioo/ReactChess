@@ -1,11 +1,15 @@
 import Figure from "./Figure";
-import createPosition, { copyPos } from "../../positions";
-import { useState } from "react";
-import React from "react";
-const Figures = () => {
-  const [pos, setPos] = useState<string[][]>(createPosition());
+import { copyPos } from "../../positions";
 
+import React from "react";
+import { useAppContext } from "../../context/Context";
+import { makeMove } from "../../move";
+const Figures = () => {
   const ref = React.useRef<HTMLDivElement>(null);
+  const { appState, dispatch } = useAppContext();
+
+  const currentPosition: string[][] =
+    appState.position[appState.position.length - 1];
 
   const getCoords = (e: React.DragEvent<HTMLDivElement>) => {
     if (ref.current) {
@@ -20,7 +24,7 @@ const Figures = () => {
   };
 
   const onDrop = (e: React.DragEvent<HTMLDivElement>) => {
-    const newPos = copyPos(pos);
+    const newPos = copyPos(currentPosition);
     const coords = getCoords(e);
     if (coords) {
       const { x, y } = coords;
@@ -32,7 +36,7 @@ const Figures = () => {
       console.log(p, row, column, x, y);
       newPos[row][column] = "";
       newPos[x][y] = p;
-      setPos(newPos);
+      dispatch(makeMove({ newPos }));
       console.log(newPos);
     }
   };
@@ -41,14 +45,14 @@ const Figures = () => {
   };
   return (
     <div className="figures" onDrop={onDrop} onDragOver={onDragOver} ref={ref}>
-      {pos.map((r, row) =>
+      {currentPosition.map((r, row) =>
         r.map((c, column) =>
-          pos[row][column] ? (
+          currentPosition[row][column] ? (
             <Figure
               key={row + "-" + column}
               row={row}
               column={column}
-              piece={pos[row][column]}
+              piece={currentPosition[row][column]}
             />
           ) : null
         )
