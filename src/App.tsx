@@ -8,6 +8,7 @@ function App() {
   const [appState, dispatch] = useReducer(reducer, initPosition);
   const providerState = { appState, dispatch };
   return (
+    // @ts-ignore
     <AppContext.Provider value={providerState}>
       <div className="app">
         <Board />

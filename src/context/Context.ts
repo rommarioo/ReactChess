@@ -10,7 +10,7 @@ const AppContext = createContext({
     position: [[]],
     turn: "",
   },
-
+  /*eslint-disable */
   dispatch: (action: Action) => {},
 });
 
